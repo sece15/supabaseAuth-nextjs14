@@ -2,7 +2,7 @@ import Step from "./Step";
 
 export default function ConnectSupabaseSteps() {
   return (
-    <ol className="flex flex-col gap-6">
+    <ol className="flex flex-col gap-6 text-black">
       <Step title="Create Supabase project">
         <p>
           Head over to{" "}
@@ -35,7 +35,7 @@ export default function ConnectSupabaseSteps() {
             className="font-bold hover:underline text-foreground/80"
             rel="noreferrer"
           >
-            your Supabase project's API Settings
+            your Supabase project&apos;s API Settings
           </a>
           .
         </p>
