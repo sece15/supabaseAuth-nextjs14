@@ -1,10 +1,10 @@
 'use client';
 import { useEffect, useState } from 'react';
 
-import AuthModal from '@/components/AuthModal';
-import AuthModalContext from '@/context/AuthModalContext';
-import CreateProfileContext from '@/context/CreateProfileContext';
-import CreateProfileModal from '@/components/CreateProfileModal';
+// import AuthModal from '@/components/AuthModal';
+import AuthModalContext from '@/context/auth-modal-context';
+import CreateProfileContext from '@/context/create-profile-context';
+// import CreateProfileModal from "@/context/auth-modal-context"
 
 interface ModalProviderProps {
   children: React.ReactNode;
@@ -45,8 +45,8 @@ const ModalProvider: React.FC<ModalProviderProps> = ({ children }) => {
         }}
       >
         {children}
-        <AuthModal />
-        <CreateProfileModal />
+        {/* <AuthModal /> */}
+        {/* <CreateProfileModal /> */}
       </CreateProfileContext.Provider>
     </AuthModalContext.Provider>
   );
